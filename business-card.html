@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cartão de Visitas — FOCUS Wealth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: 89mm 51mm; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+  .card {
+    width: 89mm; height: 51mm;
+    position: relative;
+    background: #ffffff;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .card:last-child { page-break-after: auto; }
+  .border {
+    position: absolute;
+    inset: 4mm;
+    border: 0.6pt solid #7a1f2b;
+  }
+  .front .logo { width: 50mm; height: auto; }
+  .front .center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .back .center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2.2mm;
+  }
+  .back .logo { width: 30mm; height: auto; margin-bottom: 1mm; }
+  .back .name { font-size: 14pt; font-weight: 600; color: #7a1f2b; letter-spacing: 0.2pt; }
+  .back .role { font-size: 7pt; font-weight: 500; letter-spacing: 2pt; color: #8a5c62; text-transform: uppercase; }
+  .back .divider { width: 10mm; height: 0.6pt; background: #7a1f2b; opacity: 0.4; margin: 1mm 0; }
+  .back .line { font-size: 8pt; color: #2b2b2b; letter-spacing: 0.2pt; }
+</style>
+</head>
+<body>
+  <div class="card front">
+    <div class="border"></div>
+    <div class="center">
+      <img class="logo" src="logo.svg" alt="FOCUS Wealth">
+    </div>
+  </div>
+
+  <div class="card back">
+    <div class="border"></div>
+    <div class="center">
+      <img class="logo" src="logo.svg" alt="FOCUS Wealth">
+      <div class="name">Thiago Queiroz</div>
+      <div class="role">Gestão Patrimonial</div>
+      <div class="divider"></div>
+      <div class="line">+55 (11) 91555-2323</div>
+      <div class="line">thiago.financeiro@yahoo.com.br</div>
+    </div>
+  </div>
+</body>
+</html>
